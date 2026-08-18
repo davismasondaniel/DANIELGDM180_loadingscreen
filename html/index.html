@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loading...</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background (image). To use a video instead, see notes in style.css -->
+  <div class="bg"></div>
+  <div class="vignette"></div>
+  <div class="noise"></div>
+
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">
+        <img class="logo" src="logo.png" alt="Logo" onerror="this.style.display='none'" />
+        <div class="brandText">
+          <div class="serverName">DANIELGDM180 Server</div>
+          <div class="tagline">Whitelist Freeroam • vMenu • Custom Cars Sounds MLOs Maps Scripts Clothing • PvP • Drift & Racing</div>
+        </div>
+      </div>
+
+      <div class="right">
+        <button id="toggleMusic" class="pill">Music: On</button>
+        <div class="pill small" id="status">Connecting…</div>
+      </div>
+    </header>
+
+    <section class="centerCard">
+      <div class="title">Loading into the server</div>
+      <div class="subtitle" id="tip">Tip: Use /help to see commands and more.</div>
+
+      <div class="progressOuter">
+        <div class="progressInner" id="bar"></div>
+      </div>
+
+      <div class="progressMeta">
+        <span id="percent">0%</span>
+        <span class="dots" id="dots">• • •</span>
+      </div>
+    </section>
+
+    <footer class="bottom">
+      <div class="pill small">discord.gg/wGmAGFsfQR</div>
+      <div class="pill small">Rules: Be respectful</div>
+    </footer>
+  </main>
+
+  <audio id="music" src="music.mp3" preload="auto" loop></audio>
+  <script src="app.js"></script>
+</body>
+</html>
