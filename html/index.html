@@ -7,10 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Background (image). To use a video instead, see notes in style.css -->
   <div class="bg"></div>
-  <div class="vignette"></div>
-  <div class="noise"></div>
 
   <main class="wrap">
     <header class="top">
@@ -27,6 +24,21 @@
         <div class="pill small" id="status">Connecting…</div>
       </div>
     </header>
+
+    <!-- Medical & Health Warning -->
+    <section class="warnStrip open" id="warnStrip">
+      <div class="warnHead">
+        <span class="warnHeadIcon">⚠️</span>
+        <span class="warnHeadText">Medical &amp; Health Warning — flashing lights, camera movement &amp; loud sounds.</span>
+      </div>
+      <div class="warnDetails" id="warnDetails">
+        <p>This server may contain flashing lights, rapid screen effects, bright visual effects, camera movement, loud sounds, and other intense gameplay effects.</p>
+        <p>These effects may affect players with photosensitive epilepsy, seizure disorders, migraines, dizziness, or other conditions sensitive to flashing lights or intense visual/audio stimulation.</p>
+        <p>If you experience headaches, dizziness, nausea, blurred vision, confusion, discomfort, or any unusual symptoms, stop playing immediately and take a break.</p>
+        <p class="warnStrong">⚠️ IF YOU HAVE A MEDICAL CONDITION THAT MAY BE AFFECTED BY THESE EFFECTS, PLEASE CONSIDER WHETHER PLAYING IS APPROPRIATE FOR YOU.</p>
+        <p class="warnMuted">By connecting to the server, you acknowledge this warning and agree to play responsibly. Stay safe • Take breaks • Enjoy the server.</p>
+      </div>
+    </section>
 
     <section class="centerCard">
       <div class="title">Loading into the server</div>
